@@ -4,16 +4,12 @@ using namespace std;
 
 int main()
 {
+int total = 0;
+//Calculates the sum i = [1, 100], i^2 
 for (int i = 0; i < 100; i++)
 {
-	cout << i; 
-	if (i % 3 == 0 || i % 5 == 0)
-	{
-		if (i % 3 == 0) { cout << "Fizz"; }
-		if (i % 5 == 0) { cout << "Bozz"; }
-		if (i % 7 == 0) { cout << "Blorg"; }
-	}
-		cout << endl; 
+	total += i*i;
 }
+	cout << "The total is " << i << ".\n"; 
 	return 0; 
 }
