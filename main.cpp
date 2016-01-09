@@ -2,11 +2,11 @@
 
 using namespace std; 
 
-int main()
+int main(int argc, char* argv[])
 {
-int total = 0;
-//Calculates the sum i = [1, 100], i^2 
-for (int i = 0; i < 100; i++)
+long total = 0;
+if(argc != 2) {return -1;}
+for (int i = argv[1]; i < argv[0]; i++)
 {
 	total += i*i;
 }
